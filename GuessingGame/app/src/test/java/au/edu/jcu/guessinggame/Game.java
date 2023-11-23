@@ -7,7 +7,8 @@ public class Game {
 
     public Game() {
         Random random = new Random();
-        targetNumber = random.nextInt(100) + 1; // Generate a random number between 1-100, inclusive
+        targetNumber = random.nextInt(100) + 1;
+        // Generate a random number between 1-100, inclusive
     }
 
     public boolean check(int guess) {
