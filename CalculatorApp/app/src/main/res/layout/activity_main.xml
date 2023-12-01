@@ -8,13 +8,14 @@
 
     <TextView
         android:id="@+id/solution_tv"
-        android:layout_width="match_parent"
+        android:layout_width="258dp"
         android:layout_height="match_parent"
         android:layout_above="@+id/result_tv"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+        android:layout_alignParentEnd="true"
         android:textAlignment="textEnd"
         android:textColor="@color/black"
         android:textSize="32sp" />
@@ -29,6 +30,10 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
+
+        app:autoSizeTextType="uniform"
+        app:autoSizeMinTextSize="12sp"
+
         android:text="0"
         android:textAlignment="textEnd"
         android:textColor="@color/black"
@@ -61,17 +66,19 @@
                 android:id="@+id/button_c"
                 android:backgroundTint="#f7715c"
                 android:text="@string/button_clear" /> <!-- C (Clear)     -->
+            <!-- Open Bracket  -->
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_open_bracket"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                 android:layout_width="72dp"
                 android:layout_height="72dp"
-                app:cornerRadius="12dp"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:textSize="32sp"
-                android:textColor="@color/white"
                 android:layout_margin="12dp"
-                android:id="@+id/button_open_bracket"
-                android:backgroundTint="#a1a1a1"
-                android:text="@string/button_open_bracket" /> <!-- Open Bracket  -->
+                android:backgroundTint="#f2d852"
+                android:text="@string/button_open_bracket"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                app:cornerRadius="12dp" />
+
             <com.google.android.material.button.MaterialButton
                 android:layout_width="72dp"
                 android:layout_height="72dp"
@@ -81,7 +88,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_close_bracket"
-                android:backgroundTint="#a1a1a1"
+                android:backgroundTint="#f2d852"
                 android:text="@string/button_close_bracket" /> <!-- Close Bracket -->
             <com.google.android.material.button.MaterialButton
                 android:layout_width="72dp"
@@ -305,7 +312,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_equals"
-                android:backgroundTint="#f4963b"
+                android:backgroundTint="#999999"
                 android:text="@string/button_equals" /> <!-- Equals -->
 
         </LinearLayout>
