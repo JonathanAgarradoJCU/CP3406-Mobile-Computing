@@ -47,10 +47,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         assignID(button9, R.id.button_9);
         assignID(buttonAC, R.id.button_ac);
         assignID(buttonDot, R.id.button_dot);
-
-
-
-
     }
 
     void assignID(MaterialButton btn, int id) {
@@ -105,5 +101,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return "Err";
         }
     }
-
 }
