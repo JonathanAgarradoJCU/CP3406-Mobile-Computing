@@ -267,7 +267,7 @@
                 android:layout_height="72dp"
                 app:cornerRadius="12dp"
                 style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:textSize="21sp"
+                android:textSize="18sp"
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_ac"
@@ -312,6 +312,16 @@
 
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:background="#00FFFFFF"
+        android:translationX="5dp"
+        android:translationY="5dp"
+        android:translationZ="-1dp"
+        app:srcCompat="@drawable/dan_avatar" />
 
 
 </RelativeLayout>
