@@ -121,17 +121,19 @@
                 android:id="@+id/button_7"
                 android:backgroundTint="#397b8e"
                 android:text="@string/button_7" /> <!-- 7 -->
+            <!-- 8 -->
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_8"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                 android:layout_width="72dp"
                 android:layout_height="72dp"
-                app:cornerRadius="36dp"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:textSize="32sp"
-                android:textColor="@color/white"
                 android:layout_margin="12dp"
-                android:id="@+id/button_8"
                 android:backgroundTint="#397b8e"
-                android:text="@string/button_8" /> <!-- 8 -->
+                android:text="@string/button_8"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                app:cornerRadius="36dp" />
+
             <com.google.android.material.button.MaterialButton
                 android:layout_width="72dp"
                 android:layout_height="72dp"
@@ -304,16 +306,16 @@
                 android:backgroundTint="#397b8e"
                 android:text="@string/button_dot" /> <!-- Decimal -->
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_equals"
+                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                 android:layout_width="72dp"
                 android:layout_height="72dp"
-                app:cornerRadius="12dp"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:textSize="32sp"
-                android:textColor="@color/white"
                 android:layout_margin="12dp"
-                android:id="@+id/button_equals"
                 android:backgroundTint="#999999"
-                android:text="@string/button_equals" /> <!-- Equals -->
+                android:text="@string/button_equals"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                app:cornerRadius="12dp" /> <!-- Equals -->
 
         </LinearLayout>
 
